@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(45deg, black, blue);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square {
+    height: 120px;
+    width: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    animation: bar 0.7s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.square:nth-child(4) {
+    animation-delay: 0.1s;
+}
+
+.square:nth-child(1), .square:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.square:nth-child(2), .square:nth-child(7) {
+    animation-delay: 0.4s;
+}
+@keyframes bar {
+    0% {
+        transform: rotateX(0deg)
+    }
+    50% {
+        transform: rotateX(60deg);
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+}
