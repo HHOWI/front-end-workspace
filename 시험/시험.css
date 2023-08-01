@@ -1,0 +1,26 @@
+body {
+  background-color: skyblue;
+}
+form {
+  background-color: azure;
+  border: 2px solid gray;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  padding: auto;
+  margin: auto;
+}
+#signUp {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  background-color: aquamarine;
+  border: 1px solid greenyellow;
+  font-size: 1.5rem;
+}
+
+.input {
+  background-color: azure;
+  border: none;
+  border-bottom: 2px dashed;
+}
