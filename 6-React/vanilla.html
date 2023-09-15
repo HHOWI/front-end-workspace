@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Counter</title>
+  </head>
+  <body>
+    <h1>Total clicks: <span id="clickCount">0</span></h1>
+    <button id="clickButton">Click!</button>
+    <script>
+      let clickCount = 0;
+      const clickButton = document.getElementById("clickButton");
+      clickButton.addEventListener("click", function () {
+        clickCount++;
+        const clickCountElement = document.getElementById("clickCount");
+        clickCountElement.textContent = clickCount;
+      });
+    </script>
+  </body>
+</html>
